@@ -1,0 +1,98 @@
+/* Background Styling */
+body {
+    background-image: url('railpic.png'); /* Ensure correct image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Moves form to the left */
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-left: 50px; /* Adjust to move form more left */
+    background-attachment: fixed;
+}
+
+/* Booking Form Container */
+#main {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.15); /* Softer Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input, select {
+    width: 90%;
+    height: 45px;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px;
+}
+
+/* Input Placeholder Color */
+input::placeholder {
+    color: white;
+}
+
+/* Button */
+button {
+    width: 90%;
+    height: 45px;
+    display: block;
+    margin: 10px auto;
+    background-color: rgba(135, 206, 250, 0.8); /* Light blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    color: black;
+}
+
+/* Button Link */
+button a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: rgb(79, 121, 194);
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    #main {
+        width: 90%;
+    }
+}

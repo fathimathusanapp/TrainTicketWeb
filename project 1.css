@@ -1,0 +1,109 @@
+/* Background Styling */
+body {
+    background-image: url('railpic.png'); /* Ensure correct image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Moves the login form to the left */
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-left: 50px; /* Adjust to move form more left */
+    background-attachment: fixed;
+}
+
+/* Transparent Login Box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.15); /* Softer Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Form Heading */
+h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Input Placeholder Color */
+input::placeholder {
+    color: white;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    color: white;
+}
+
+/* Button Styles */
+#g, #ff {
+    background-color: rgba(135, 206, 250, 0.8); /* Light blue */
+    color: black;
+    margin-bottom: 10px;
+}
+
+#hhh {
+    background-color: rgb(231, 197, 10);
+}
+
+/* Button Hover Effect */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Link Styling */
+#hh {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#hh:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    #first {
+        width: 90%;
+    }
+}

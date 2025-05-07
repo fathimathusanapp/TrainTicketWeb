@@ -1,0 +1,65 @@
+/* Background Image */
+body {
+    background-image: url('railpic.png'); /* Ensure correct image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Transparent Glassmorphism Effect */
+#block {
+    width: 80%; /* Adjust width as needed */
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.15); /* Transparent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Fields */
+#a {
+    width: 85%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-size: 16px;
+}
+
+/* Placeholder Styling */
+#a::placeholder {
+    color: #000;
+    opacity: 0.7;
+}
+
+/* Buttons */
+#d, #e {
+    background-color: yellow;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Button Hover Effect */
+#d:hover, #e:hover {
+    transform: scale(1.05);
+}
+
+#d a, #e a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

@@ -1,0 +1,102 @@
+/* Background Styling */
+body {
+    background-image: url('railpic.png'); /* Ensure correct image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+/* Table Container */
+#table-container {
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Table Styling */
+#t {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Table Headers */
+th {
+    background-color: rgba(0, 0, 0, 0.4); /* Dark translucent background */
+    color: white;
+    padding: 15px;
+}
+
+/* Table Rows */
+td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Book Now Button */
+#s {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(135, 206, 250, 0.8);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Button Link */
+#s a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/* Button Hover */
+#s:hover {
+    background-color: rgb(79, 121, 194);
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #table-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #t {
+        font-size: 16px;
+    }
+
+    #s {
+        width: 150px;
+        font-size: 16px;
+    }
+}
